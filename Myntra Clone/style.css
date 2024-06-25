@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  background: rgba(249, 248, 248, 0.904);
+  height: 66px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rightBox{
+    display: flex;
+    margin: 12px;
+  }
+
+.left img{
+  width: 32px;
+  height: 23px;
+}
+
+.container{ 
+  padding: 0 10vw; 
+}
+
+.containerHeader{ 
+  padding: 0 10vw; 
+}
+
+nav{
+  font-size: 12px;
+  padding-top: 14px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 12px;
+}
+
+.section1{
+  background: #f2f2f2; 
+}
+
+.search{
+  width: 34vw;
+    padding: 7px 17px;
+    border: 0.5px solid grey;
+    background: #f7f8fd;
+    border-radius: 5px;
+}
+
+.homeImg{
+  width: 80vw;
+  margin: 12px 0;
+}
+
+.itemImg{
+  width: 10vw;
+  margin: 6px 12px;
+}
+
+footer{
+  padding: 23px;
+  text-align: center;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.tall{
+  min-height: 40vh;
+}
+
+@media (max-width: 450px) { 
+.search {
+    width: 72vw; 
+}
+}
+
+@media (max-width: 1550px) { 
+
+  nav ul li {
+    list-style: none;
+    padding: 0 4px;
+    font-size: 10px;
+}
+  
+
+  .containerHeader {
+    padding: 0 2vw;
+}
+  
+header{ 
+  height:122px;
+}  
+
+  nav{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right{ 
+    flex-direction: column;
+  }
+
+  .rightBox{
+    display: flex;
+    margin: 12px;
+  }
+}
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    padding-top: 60px; /* Top padding to center content */
+}
+
+/* Modal content */
+/* .modal-content  */
+  /* { */
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f8f8f8; */
+    /* margin: auto; */
+    /* padding: 2; */
+     /* display: flex;  */
+    /* justify-content: center;  */
+    /* align-items: center;  */
+    /* height: 100vh;  */
+/* } */
+/*  */
+/*  */
+
+/* .close { */
+    /* color: #aaa; */
+    /* float: right; */
+    /* font-size: 28px; */
+    /* font-weight: bold; */
+    /* cursor: pointer; */
+/* } */
+/*  */
+/* .close:hover, */
+/* .close:focus { */
+    /* color: black; */
+    /* text-decoration: none; */
+/* } */
+/*  */
+/* Modal container */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it’s above other content */
+  overflow: auto; /* Allow scrolling if the content is too tall */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #ffebee; /* Light pink background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Adjust as needed, ensures responsiveness */
+  max-width: 400px; /* Maximum width for the modal */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end; /* Align the close button to the end of the flex container */
+  margin-bottom: 10px; /* Add some space below the close button */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Login form */
+#loginForm {
+  display: flex;
+  flex-direction: column; /* Stack the form elements vertically */
+  width: 100%; /* Ensure it takes full width of the modal */
+  box-sizing: border-box;
+}
+
+#loginForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#loginForm .my-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#loginForm .my-2 label {
+  margin-bottom: 5px;
+}
+
+#loginForm .my-2 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+#loginForm button {
+  padding: 10px;
+  border: none;
+  background-color: #b24888; /* Green background */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#loginForm button:hover {
+  background-color: #ff06a4;
+}
+
+#loginForm p {
+  text-align: center;
+  margin-top: 10px;
+}
+#signupForm {
+  display: flex;
+  flex-direction: column; /* Stack the form elements vertically */
+  width: 100%; /* Ensure it takes full width of the modal */
+  box-sizing: border-box;
+}
+
+#signupForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#signupForm .my-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#signupForm .my-2 label {
+  margin-bottom: 5px;
+}
+
+#signupForm .my-2 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+#signupForm button {
+  padding: 10px;
+  border: none;
+  background-color: #d12274; /* Green background */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signupForm button:hover {
+  background-color: #a04553;
+}
+
+#signupForm p {
+  text-align: center;
+  margin-top: 10px;
+}
