@@ -305,3 +305,17 @@ header{
   text-align: center;
   margin-top: 10px;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  margin-bottom: 80px; /* Adjust as needed based on your footer height */
+}
+.footer {
+  background-color: lightpink;
+  padding: 20px;
+  text-align: center;
+  color: rgb(23, 22, 22);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

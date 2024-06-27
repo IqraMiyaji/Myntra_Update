@@ -48,28 +48,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
-document.getElementById('signupForm').addEventListener('submit', async (event) => {
-    event.preventDefault();
-    
-    const username = document.getElementById('signupUsername').value;
-    const email = document.getElementById('signupEmail').value;
-    const phone = document.getElementById('signupPhone').value;
-    const password = document.getElementById('signupPassword').value;
-    const dob = document.getElementById('dob').value;
-    
-    const response = await fetch('/signin', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, email, phone, password, dob }),
-    });
-    
-    const result = await response.json();
-    if (response.ok) {
-      alert('User signed in successfully');
-    } else {
-      alert('Error signing in user: ' + result.error);
-    }
-  });
-  
+// document.getElementById('signupForm').addEventListener('submit', async (event) => {
+    // event.preventDefault();
+    // 
+    // const username = document.getElementById('signupUsername').value;
+    // const email = document.getElementById('signupEmail').value;
+    // const phone = document.getElementById('signupPhone').value;
+    // const password = document.getElementById('signupPassword').value;
+    // const dob = document.getElementById('dob').value;
+    // 
+    // const response = await fetch('/signin', {
+    //   method: 'POST',
+    //   headers: {
+        // 'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({ username, email, phone, password, dob }),
+    // });
+    // 
+    // const result = await response.json();
+    // if (response.ok) {
+    //   alert('User signed in successfully');
+    // } else {
+    //   alert('Error signing in user: ' + result.error);
+    // }
+//   });
+//  export const actions={
+    //  default:async ({requst})=>{
+        // const data=Object.fromEntries(await requst.formdata());
+        //  console.log(data);
+    // }
+//    }
