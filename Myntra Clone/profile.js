@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //   alert('Error signing in user: ' + result.error);
     // }
 //   });
-//  export const actions={
-    //  default:async ({requst})=>{
-        // const data=Object.fromEntries(await requst.formdata());
-        //  console.log(data);
-    // }
-//    }
+ export const actions={
+    default:async ({requst})=>{
+        const data=Object.fromEntries(await requst.formdata());
+          console.log(data);
+    }
+    }
