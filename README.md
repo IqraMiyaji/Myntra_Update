@@ -7,3 +7,5 @@ graph TD;
     C --> D[Providing notification to the user about his/her Birthday prior a week];
     D --> E[Activating coupon code on special event such as Birthday and Login anniversary];
     E --> F[Giving fair percentage of Discount only on those days to that single user];
+## Video
+[Download the video file](myntra - Made with Clipchamp.mp4)
