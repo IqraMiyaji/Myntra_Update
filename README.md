@@ -9,7 +9,7 @@ graph TD;
     E --> F[Giving fair percentage of Discount only on those days to that single user];
 ## Video
 <video width="320" height="240" controls>
-  <source src="myntra - Made with Clipchamp.mp4" type="video/mp4">
+  <source src= "https://drive.google.com/file/d/16varL-uye9-jJNd4tDKuijL7nmK9fi-m/view?usp=sharing">
   Your browser does not support the video tag.
 </video>
 
