@@ -7,9 +7,6 @@ graph TD;
     C --> D[Providing notification to the user about his/her Birthday prior a week];
     D --> E[Activating coupon code on special event such as Birthday and Login anniversary];
     E --> F[Giving fair percentage of Discount only on those days to that single user];
-## Video
-<video width="320" height="240" controls>
-  <source src= "https://drive.google.com/file/d/16varL-uye9-jJNd4tDKuijL7nmK9fi-m/view?usp=sharing">
-  Your browser does not support the video tag.
-</video>
 
+## Video
+[Watch the video on Google Drive](https://drive.google.com/file/d/16varL-uye9-jJNd4tDKuijL7nmK9fi-m/view?usp=sharing)
