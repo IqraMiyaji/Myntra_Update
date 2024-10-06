@@ -8,4 +8,8 @@ graph TD;
     D --> E[Activating coupon code on special event such as Birthday and Login anniversary];
     E --> F[Giving fair percentage of Discount only on those days to that single user];
 ## Video
-[Download the video file](myntra - Made with Clipchamp.mp4)
+<video width="320" height="240" controls>
+  <source src="myntra - Made with Clipchamp.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
