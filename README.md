@@ -8,5 +8,5 @@ graph TD;
     D --> E[Activating coupon code on special event such as Birthday and Login anniversary];
     E --> F[Giving fair percentage of Discount only on those days to that single user];
 
-## Video
+
 [Watch the video on Google Drive](https://drive.google.com/file/d/16varL-uye9-jJNd4tDKuijL7nmK9fi-m/view?usp=sharing)
